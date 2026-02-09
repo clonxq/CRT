@@ -62,12 +62,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Free disk space
-        uses: sbwml/actions@free-disk
-                     
-      - name: After
-        run: |
-            df -H 
-    
+        uses: sbwml/actions@free-disk                  
+   
       - name: Checkout Projects
         uses: actions/checkout@main
 
